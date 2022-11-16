@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:lottie/lottie.dart';
-import 'package:steam_app/home_game_list.dart';
-import 'package:steam_app/steam_cubit.dart';
-import 'package:steam_app/steam_states.dart';
+
+import 'package:steam_app/src/home/view/widgets/home_game_list.dart';
+import 'package:steam_app/src/data/cubit/steam_cubit.dart';
+import 'package:steam_app/src/data/states/steam_states.dart';
 
 class HomePageWidgets extends StatelessWidget {
   const HomePageWidgets({
@@ -46,19 +48,23 @@ class HomePageWidgets extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white),
+                        color: Color.fromARGB(255, 0, 0, 0)),
                   ),
-                )
+                ),
               ],
             );
           } else if (state is LoadedState) {
-            return HomePageGameList(
-              data: state.data,
-            );
+            return HomePageGameList(data: state.data);
           } else {
-            return const Center(
-              child: Text('Error'),
-            );
+            return IconButton(
+                onPressed: () {
+                  state;
+                },
+                icon: Icon(
+                  Icons.change_circle,
+                  size: 50,
+                  color: Color.fromARGB(255, 54, 38, 32),
+                ));
           }
         })),
       ],

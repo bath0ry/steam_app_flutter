@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:steam_app/steam_model.dart';
+import 'package:steam_app/src/data/model/steam_model.dart';
 
 abstract class SteamState extends Equatable {}
 

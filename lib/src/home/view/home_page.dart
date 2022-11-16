@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:steam_app/drawer_home_page.dart';
 
-import 'package:steam_app/home_page_widgets.dart';
+import 'package:steam_app/src/home/view/widgets/drawer_home_page.dart';
+import 'package:steam_app/src/home/view/widgets/home_page_widgets.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -18,9 +18,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavigationDrawer(),
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
-      body: HomePageWidgets(),
-    );
+        drawer: NavigationDrawer(),
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+        body: HomePageWidgets());
   }
 }

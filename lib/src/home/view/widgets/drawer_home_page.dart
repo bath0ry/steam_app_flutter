@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_web_browser/flutter_web_browser.dart';
+
 class NavigationDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,20 +16,6 @@ class NavigationDrawer extends StatelessWidget {
               'Powered by bath0ry',
               style: TextStyle(color: Colors.white),
             ),
-          ),
-          ListTile(
-            title: const Text('Item 1'),
-            onTap: () {
-              // Update the state of the app.
-              // ...
-            },
-          ),
-          ListTile(
-            title: const Text('Item 2'),
-            onTap: () {
-              // Update the state of the app.
-              // ...
-            },
           ),
         ],
       ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:steam_app/steam_model.dart';
+import 'package:steam_app/src/data/model/steam_model.dart';
 
 class HomePageGameList extends StatelessWidget {
   const HomePageGameList({
@@ -37,13 +37,6 @@ class HomePageGameList extends StatelessWidget {
                 width: 250,
                 height: 250,
               ),
-              Divider(
-                height: 50,
-                color: Color.fromARGB(255, 0, 0, 0),
-                thickness: 2,
-                indent: 40,
-                endIndent: 40,
-              ),
               Text(
                 '\ORIGINAL PRICE:  \$${data[index].normalPrice}',
                 style: const TextStyle(
@@ -67,6 +60,13 @@ class HomePageGameList extends StatelessWidget {
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
                     decoration: TextDecoration.overline),
+              ),
+              Divider(
+                height: 50,
+                color: Color.fromARGB(255, 0, 0, 0),
+                thickness: 2,
+                indent: 40,
+                endIndent: 40,
               ),
             ]);
           }),

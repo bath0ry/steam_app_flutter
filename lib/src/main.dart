@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:steam_app/home_page.dart';
-import 'package:steam_app/steam_cubit.dart';
-import 'package:steam_app/steam_service.dart';
+import 'package:steam_app/src/home/view/home_page.dart';
+import 'package:steam_app/src/data/cubit/steam_cubit.dart';
+import 'package:steam_app/src/data/service/steam_service.dart';
 
 void main() {
   runApp(const MyApp());

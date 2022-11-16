@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:steam_app/steam_model.dart';
+import 'package:steam_app/src/data/model/steam_model.dart';
 
 class SteamService {
   SteamService(this.dio);

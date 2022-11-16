@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:steam_app/steam_model.dart';
-import 'package:steam_app/steam_service.dart';
-import 'package:steam_app/steam_states.dart';
+import 'package:steam_app/src/data/model/steam_model.dart';
+import 'package:steam_app/src/data/service/steam_service.dart';
+import 'package:steam_app/src/data/states/steam_states.dart';
 
 class SteamCubit extends Cubit<SteamState> {
   SteamCubit({required this.service}) : super(InitialState()) {
