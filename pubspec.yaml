@@ -41,6 +41,9 @@ dependencies:
   flutter_bloc: ^8.1.1
   equatable: ^2.0.5
   lottie: ^2.0.0
+  js: ^0.6.5
+  url_launcher: ^5.2.7
+  flutter_html: ^0.11.1
 
 dev_dependencies:
   flutter_test:
