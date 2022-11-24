@@ -27,6 +27,10 @@ class HomePageWidgets extends StatelessWidget {
             scale: 2.5,
           ),
         ),
+        Text(
+          'Games on sale!',
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
+        ),
         BlocBuilder<SteamCubit, SteamState>(builder: ((context, state) {
           if (state is LoadingState) {
             return Center(

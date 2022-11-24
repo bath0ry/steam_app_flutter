@@ -32,60 +32,73 @@ class HomePageGameList extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Image.network(
-                data[index].thumb,
-                width: 250,
-                height: 250,
-              ),
-              SizedBox(
-                height: 10,
-              ),
               Container(
-                height: 25,
+                height: 300,
                 decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(15)),
-                child: Text(
-                  'ORIGINAL PRICE:  \$${data[index].normalPrice}',
-                  style: const TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                  ),
+                    color: Color.fromARGB(255, 214, 211, 211),
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20))),
+                child: Image.network(
+                  data[index].thumb,
+                  width: 250,
+                  height: 250,
                 ),
               ),
-              SizedBox(
-                height: 10,
-              ),
               Container(
-                height: 25,
+                height: 220,
+                width: 300,
                 decoration: BoxDecoration(
-                    color: Colors.grey,
+                    color: Color.fromARGB(255, 214, 211, 211),
                     borderRadius: BorderRadius.circular(15)),
-                child: Text(
-                  'SALE PRICE:  \$${data[index].salePrice}',
-                  style: const TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Container(
-                height: 25,
-                decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(15)),
-                child: Text(
-                  'METACRITIC SCORE:  ${data[index].metacriticScore}',
-                  style: const TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                  ),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Icon(
+                      Icons.attach_money,
+                      color: Colors.green,
+                    ),
+                    Text(
+                      'ORIGINAL PRICE:  \$${data[index].normalPrice}',
+                      style: const TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Icon(
+                      Icons.shopping_cart,
+                      color: Color.fromARGB(255, 139, 0, 0),
+                    ),
+                    Text(
+                      'SALE PRICE:  \$${data[index].salePrice}',
+                      style: const TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Color.fromARGB(255, 219, 198, 5),
+                    ),
+                    Text(
+                      'METACRITIC SCORE:  ${data[index].metacriticScore}',
+                      style: const TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Divider(
