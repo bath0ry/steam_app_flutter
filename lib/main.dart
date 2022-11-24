@@ -18,9 +18,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Steam App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: MultiBlocProvider(providers: [
         BlocProvider<SteamCubit>(
             create: (BuildContext context) =>

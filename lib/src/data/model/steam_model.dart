@@ -2,7 +2,6 @@
 //
 //     final steamModel = steamModelFromJson(jsonString);
 
-import 'package:meta/meta.dart';
 import 'dart:convert';
 
 List<SteamModel> steamModelFromJson(String str) =>
