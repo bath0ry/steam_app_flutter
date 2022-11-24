@@ -21,14 +21,17 @@ class HomePageGameList extends StatelessWidget {
                   child: Text(
                     '${data[index].title}',
                     style: const TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
+                      color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 20,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                 ),
               ),
-              Icon(Icons.sports_esports),
+              Icon(
+                Icons.sports_esports,
+                color: Colors.white,
+              ),
               SizedBox(
                 height: 10,
               ),
@@ -103,7 +106,7 @@ class HomePageGameList extends StatelessWidget {
               ),
               Divider(
                 height: 50,
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color.fromARGB(255, 255, 255, 255),
                 thickness: 2,
                 indent: 40,
                 endIndent: 40,
