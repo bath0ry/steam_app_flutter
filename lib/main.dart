@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         BlocProvider<SteamCubit>(
             create: (BuildContext context) =>
                 SteamCubit(service: SteamService(Dio())))
-      ], child: SafeArea(child: MyHomePage())),
+      ], child: const SafeArea(child: MyHomePage())),
     );
   }
 }

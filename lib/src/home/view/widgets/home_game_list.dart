@@ -19,7 +19,7 @@ class HomePageGameList extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(top: 50),
                   child: Text(
-                    '${data[index].title}',
+                    data[index].title,
                     style: const TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontSize: 20,
@@ -28,16 +28,16 @@ class HomePageGameList extends StatelessWidget {
                   ),
                 ),
               ),
-              Icon(
+              const Icon(
                 Icons.sports_esports,
                 color: Colors.white,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
                 height: 300,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Color.fromARGB(255, 92, 92, 92),
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
@@ -52,14 +52,14 @@ class HomePageGameList extends StatelessWidget {
                 height: 220,
                 width: 300,
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 214, 211, 211),
+                    color: const Color.fromARGB(255, 214, 211, 211),
                     borderRadius: BorderRadius.circular(15)),
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.attach_money,
                       color: Colors.green,
                     ),
@@ -71,10 +71,10 @@ class HomePageGameList extends StatelessWidget {
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.shopping_cart,
                       color: Color.fromARGB(255, 139, 0, 0),
                     ),
@@ -86,10 +86,10 @@ class HomePageGameList extends StatelessWidget {
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.star,
                       color: Color.fromARGB(255, 219, 198, 5),
                     ),
@@ -104,7 +104,7 @@ class HomePageGameList extends StatelessWidget {
                   ],
                 ),
               ),
-              Divider(
+              const Divider(
                 height: 50,
                 color: Color.fromARGB(255, 255, 255, 255),
                 thickness: 2,

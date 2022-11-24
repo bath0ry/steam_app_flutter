@@ -19,7 +19,7 @@ class HomePageWidgets extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
-              color: Color.fromARGB(255, 255, 255, 255)),
+              color: const Color.fromARGB(255, 255, 255, 255)),
           width: 600,
           height: 200,
           child: Image.asset(
@@ -27,7 +27,7 @@ class HomePageWidgets extends StatelessWidget {
             scale: 2.5,
           ),
         ),
-        Text(
+        const Text(
           'Games on sale!',
           style: TextStyle(
               fontSize: 30, fontWeight: FontWeight.w500, color: Colors.white),
@@ -46,7 +46,7 @@ class HomePageWidgets extends StatelessWidget {
                       child: Lottie.network(
                           'https://assets7.lottiefiles.com/packages/lf20_g94pyiq4.json')),
                 ),
-                Padding(
+                const Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     'Erro 500: Falha com a comunicação com o servidor',
@@ -65,7 +65,7 @@ class HomePageWidgets extends StatelessWidget {
                 onPressed: () {
                   state;
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.change_circle,
                   size: 50,
                   color: Color.fromARGB(255, 54, 38, 32),
