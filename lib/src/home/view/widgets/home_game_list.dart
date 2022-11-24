@@ -37,29 +37,56 @@ class HomePageGameList extends StatelessWidget {
                 width: 250,
                 height: 250,
               ),
-              Text(
-                '\ORIGINAL PRICE:  \$${data[index].normalPrice}',
-                style: const TextStyle(
-                  color: Color.fromARGB(255, 0, 0, 0),
-                  fontSize: 20,
-                  fontWeight: FontWeight.w900,
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 25,
+                decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(15)),
+                child: Text(
+                  'ORIGINAL PRICE:  \$${data[index].normalPrice}',
+                  style: const TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontSize: 20,
+                    fontWeight: FontWeight.w900,
+                  ),
                 ),
               ),
-              Text(
-                '\SALE PRICE:  \$${data[index].salePrice}',
-                style: const TextStyle(
-                    color: Color.fromARGB(255, 0, 0, 0),
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    decoration: TextDecoration.overline),
+              SizedBox(
+                height: 10,
               ),
-              Text(
-                '\METACRITIC SCORE:  ${data[index].metacriticScore}',
-                style: const TextStyle(
+              Container(
+                height: 25,
+                decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(15)),
+                child: Text(
+                  'SALE PRICE:  \$${data[index].salePrice}',
+                  style: const TextStyle(
                     color: Color.fromARGB(255, 0, 0, 0),
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
-                    decoration: TextDecoration.overline),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 25,
+                decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(15)),
+                child: Text(
+                  'METACRITIC SCORE:  ${data[index].metacriticScore}',
+                  style: const TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontSize: 20,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
               ),
               Divider(
                 height: 50,
