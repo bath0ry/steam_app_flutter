@@ -35,7 +35,7 @@ class HomePageGameList extends StatelessWidget {
               Container(
                 height: 300,
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 214, 211, 211),
+                    color: Color.fromARGB(255, 92, 92, 92),
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
                         topRight: Radius.circular(20))),
