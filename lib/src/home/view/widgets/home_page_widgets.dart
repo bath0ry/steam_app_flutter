@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:lottie/lottie.dart';
+import 'package:steam_app/src/home/view/widgets/drawer_home_page.dart';
 
 import 'package:steam_app/src/home/view/widgets/home_game_list.dart';
 import 'package:steam_app/src/data/cubit/steam_cubit.dart';
@@ -20,11 +21,23 @@ class HomePageWidgets extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               color: const Color.fromARGB(255, 255, 255, 255)),
-          width: 600,
+          width: 500,
           height: 200,
-          child: Image.asset(
-            'assets/images/imagem_2022-11-16_112157890-removebg-preview.png',
-            scale: 2.5,
+          child: Row(
+            children: [
+              IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => NavigationDrawer()));
+                  },
+                  icon: Icon(Icons.menu)),
+              Image.asset(
+                'assets/images/imagem_2022-11-16_112157890-removebg-preview.png',
+                scale: 3,
+              ),
+            ],
           ),
         ),
         const Text(
