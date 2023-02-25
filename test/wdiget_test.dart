@@ -23,6 +23,7 @@ void main() {
     expect(saleFinder, findsOneWidget);
   });
   testWidgets('My widget has IMAGE', (tester) async {
+    //image widget test
     await tester.pumpWidget(MaterialApp(
       home: MultiBlocProvider(providers: [
         BlocProvider<SteamCubit>(

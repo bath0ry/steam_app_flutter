@@ -15,7 +15,7 @@ class HomePageWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Column(
       children: [
         Container(
           decoration: BoxDecoration(
@@ -23,9 +23,11 @@ class HomePageWidgets extends StatelessWidget {
               color: const Color.fromARGB(255, 255, 255, 255)),
           width: 500,
           height: 200,
+          child: Image.asset(
+              'assets/images/imagem_2022-11-16_112157890-removebg-preview.png'),
         ),
         Text(
-          'Games on sale',
+          'Games on Sale!',
           style: TextStyle(
               fontSize: 30, fontWeight: FontWeight.w500, color: Colors.white),
         ),

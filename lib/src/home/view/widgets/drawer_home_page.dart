@@ -29,7 +29,7 @@ class NavigationDrawer extends StatelessWidget {
             currentAccountPicture: CircleAvatar(
               radius: 30.0,
               backgroundImage: NetworkImage(
-                'https://media-exp1.licdn.com/dms/image/C4D03AQHaaBBKYXDoGg/profile-displayphoto-shrink_200_200/0/1658876659258?e=1674691200&v=beta&t=7v7rR-hN22xyt9FIdmflUyeCaCPfINbDzX8Q1Jsfk50',
+                'https://media.licdn.com/dms/image/D4D35AQEEb9zkwraB_A/profile-framedphoto-shrink_200_200/0/1677322109174?e=1677974400&v=beta&t=nlwAmxdCTyZR62w-xCGA-wNr2lHPTj932ShK-x0XZdk',
               ),
               backgroundColor: Colors.transparent,
             ),
