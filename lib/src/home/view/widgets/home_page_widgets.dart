@@ -15,7 +15,7 @@ class HomePageWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
         Container(
           decoration: BoxDecoration(
@@ -23,25 +23,9 @@ class HomePageWidgets extends StatelessWidget {
               color: const Color.fromARGB(255, 255, 255, 255)),
           width: 500,
           height: 200,
-          child: Row(
-            children: [
-              IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => NavigationDrawer()));
-                  },
-                  icon: Icon(Icons.menu)),
-              Image.asset(
-                'assets/images/imagem_2022-11-16_112157890-removebg-preview.png',
-                scale: 3,
-              ),
-            ],
-          ),
         ),
-        const Text(
-          'Games on sale!',
+        Text(
+          'Games on sale',
           style: TextStyle(
               fontSize: 30, fontWeight: FontWeight.w500, color: Colors.white),
         ),

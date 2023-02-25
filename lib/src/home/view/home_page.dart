@@ -21,6 +21,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         drawer: NavigationDrawer(),
         backgroundColor: const Color.fromARGB(255, 34, 34, 34),
-        body: const HomePageWidgets());
+        body: HomePageWidgets());
   }
 }
