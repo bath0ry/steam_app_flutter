@@ -1,5 +1,7 @@
 import 'package:dio/dio.dart';
+import 'package:mockito/annotations.dart';
 import 'package:steam_app/src/data/model/steam_model.dart';
+@GenerateMocks([SteamService])
 
 class SteamService {
   SteamService(this.dio);
